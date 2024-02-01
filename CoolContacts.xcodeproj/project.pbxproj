@@ -8,12 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		90F5264E2B6AFFC000A27C7E /* CoolContactsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F5264D2B6AFFC000A27C7E /* CoolContactsApp.swift */; };
-		90F526502B6AFFC000A27C7E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F5264F2B6AFFC000A27C7E /* ContentView.swift */; };
 		90F526522B6AFFC300A27C7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90F526512B6AFFC300A27C7E /* Assets.xcassets */; };
 		90F526552B6AFFC300A27C7E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90F526542B6AFFC300A27C7E /* Preview Assets.xcassets */; };
 		90F5265F2B6AFFC300A27C7E /* CoolContactsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F5265E2B6AFFC300A27C7E /* CoolContactsTests.swift */; };
 		90F526692B6AFFC300A27C7E /* CoolContactsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F526682B6AFFC300A27C7E /* CoolContactsUITests.swift */; };
 		90F5266B2B6AFFC300A27C7E /* CoolContactsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F5266A2B6AFFC300A27C7E /* CoolContactsUITestsLaunchTests.swift */; };
+		90F5267D2B6B00E600A27C7E /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F5267C2B6B00E600A27C7E /* Api.swift */; };
+		90F526802B6B018900A27C7E /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F5267F2B6B018900A27C7E /* RootView.swift */; };
+		90F526822B6B028A00A27C7E /* Api+Employees+Fetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F526812B6B028A00A27C7E /* Api+Employees+Fetch.swift */; };
+		90F526842B6B02CE00A27C7E /* Api+Employees+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F526832B6B02CE00A27C7E /* Api+Employees+Create.swift */; };
+		90F526862B6B02FD00A27C7E /* Api+Employees+Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F526852B6B02FD00A27C7E /* Api+Employees+Update.swift */; };
+		90F526892B6B034E00A27C7E /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F526882B6B034E00A27C7E /* Employee.swift */; };
+		90F5268C2B6B048B00A27C7E /* EmployeeDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F5268B2B6B048B00A27C7E /* EmployeeDAO.swift */; };
+		90F5268E2B6B065200A27C7E /* EmployeesResponseDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F5268D2B6B065200A27C7E /* EmployeesResponseDAO.swift */; };
+		90F526912B6B076700A27C7E /* NetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F526902B6B076700A27C7E /* NetworkingError.swift */; };
+		90F526932B6B18F100A27C7E /* EmployeeResponseDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F526922B6B18F100A27C7E /* EmployeeResponseDAO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +45,6 @@
 /* Begin PBXFileReference section */
 		90F5264A2B6AFFC000A27C7E /* CoolContacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoolContacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90F5264D2B6AFFC000A27C7E /* CoolContactsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoolContactsApp.swift; sourceTree = "<group>"; };
-		90F5264F2B6AFFC000A27C7E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		90F526512B6AFFC300A27C7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90F526542B6AFFC300A27C7E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		90F5265A2B6AFFC300A27C7E /* CoolContactsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoolContactsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +52,16 @@
 		90F526642B6AFFC300A27C7E /* CoolContactsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoolContactsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		90F526682B6AFFC300A27C7E /* CoolContactsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoolContactsUITests.swift; sourceTree = "<group>"; };
 		90F5266A2B6AFFC300A27C7E /* CoolContactsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoolContactsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		90F5267C2B6B00E600A27C7E /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		90F5267F2B6B018900A27C7E /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		90F526812B6B028A00A27C7E /* Api+Employees+Fetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Api+Employees+Fetch.swift"; sourceTree = "<group>"; };
+		90F526832B6B02CE00A27C7E /* Api+Employees+Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Api+Employees+Create.swift"; sourceTree = "<group>"; };
+		90F526852B6B02FD00A27C7E /* Api+Employees+Update.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Api+Employees+Update.swift"; sourceTree = "<group>"; };
+		90F526882B6B034E00A27C7E /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		90F5268B2B6B048B00A27C7E /* EmployeeDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDAO.swift; sourceTree = "<group>"; };
+		90F5268D2B6B065200A27C7E /* EmployeesResponseDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesResponseDAO.swift; sourceTree = "<group>"; };
+		90F526902B6B076700A27C7E /* NetworkingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingError.swift; sourceTree = "<group>"; };
+		90F526922B6B18F100A27C7E /* EmployeeResponseDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeResponseDAO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +112,13 @@
 		90F5264C2B6AFFC000A27C7E /* CoolContacts */ = {
 			isa = PBXGroup;
 			children = (
-				90F5264D2B6AFFC000A27C7E /* CoolContactsApp.swift */,
-				90F5264F2B6AFFC000A27C7E /* ContentView.swift */,
-				90F526512B6AFFC300A27C7E /* Assets.xcassets */,
+				90F5268F2B6B075100A27C7E /* Shared */,
+				90F5268A2B6B046100A27C7E /* DAOs */,
+				90F526872B6B031400A27C7E /* Models */,
+				90F5267B2B6B00C100A27C7E /* Api */,
+				90F5267A2B6B00AD00A27C7E /* ViewModels */,
+				90F526782B6B006300A27C7E /* Features */,
+				90F526772B6B005000A27C7E /* App */,
 				90F526532B6AFFC300A27C7E /* Preview Content */,
 			);
 			path = CoolContacts;
@@ -125,6 +147,83 @@
 				90F5266A2B6AFFC300A27C7E /* CoolContactsUITestsLaunchTests.swift */,
 			);
 			path = CoolContactsUITests;
+			sourceTree = "<group>";
+		};
+		90F526772B6B005000A27C7E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				90F5264D2B6AFFC000A27C7E /* CoolContactsApp.swift */,
+				90F526512B6AFFC300A27C7E /* Assets.xcassets */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		90F526782B6B006300A27C7E /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				90F5267E2B6B016600A27C7E /* Launch */,
+				90F526792B6B009200A27C7E /* All Contacts */,
+			);
+			name = Features;
+			sourceTree = "<group>";
+		};
+		90F526792B6B009200A27C7E /* All Contacts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "All Contacts";
+			sourceTree = "<group>";
+		};
+		90F5267A2B6B00AD00A27C7E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		90F5267B2B6B00C100A27C7E /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				90F5267C2B6B00E600A27C7E /* Api.swift */,
+				90F526812B6B028A00A27C7E /* Api+Employees+Fetch.swift */,
+				90F526832B6B02CE00A27C7E /* Api+Employees+Create.swift */,
+				90F526852B6B02FD00A27C7E /* Api+Employees+Update.swift */,
+			);
+			name = Api;
+			sourceTree = "<group>";
+		};
+		90F5267E2B6B016600A27C7E /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				90F5267F2B6B018900A27C7E /* RootView.swift */,
+			);
+			name = Launch;
+			sourceTree = "<group>";
+		};
+		90F526872B6B031400A27C7E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				90F526882B6B034E00A27C7E /* Employee.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		90F5268A2B6B046100A27C7E /* DAOs */ = {
+			isa = PBXGroup;
+			children = (
+				90F5268B2B6B048B00A27C7E /* EmployeeDAO.swift */,
+				90F5268D2B6B065200A27C7E /* EmployeesResponseDAO.swift */,
+				90F526922B6B18F100A27C7E /* EmployeeResponseDAO.swift */,
+			);
+			name = DAOs;
+			sourceTree = "<group>";
+		};
+		90F5268F2B6B075100A27C7E /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				90F526902B6B076700A27C7E /* NetworkingError.swift */,
+			);
+			name = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +356,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90F526502B6AFFC000A27C7E /* ContentView.swift in Sources */,
+				90F5268E2B6B065200A27C7E /* EmployeesResponseDAO.swift in Sources */,
+				90F526822B6B028A00A27C7E /* Api+Employees+Fetch.swift in Sources */,
+				90F526912B6B076700A27C7E /* NetworkingError.swift in Sources */,
+				90F526892B6B034E00A27C7E /* Employee.swift in Sources */,
+				90F526862B6B02FD00A27C7E /* Api+Employees+Update.swift in Sources */,
+				90F5268C2B6B048B00A27C7E /* EmployeeDAO.swift in Sources */,
+				90F526802B6B018900A27C7E /* RootView.swift in Sources */,
+				90F5267D2B6B00E600A27C7E /* Api.swift in Sources */,
+				90F526842B6B02CE00A27C7E /* Api+Employees+Create.swift in Sources */,
 				90F5264E2B6AFFC000A27C7E /* CoolContactsApp.swift in Sources */,
+				90F526932B6B18F100A27C7E /* EmployeeResponseDAO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
