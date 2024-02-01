@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension Api {
+extension Api: ApiFetching {
     
     func fetchEmployees() async throws -> EmployeesResponseDAO {
         

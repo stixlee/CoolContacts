@@ -7,29 +7,16 @@
 
 import SwiftUI
 
+// Mark: View State
 @Observable final class AllEmployeesViewModel: ObservableObject {
     
     var employees: [Employee] = []
     var showError: Bool = false
     var presentAddEmployee: Bool = false
-    
-    var seniorEmployees: [Employee] {
-        var seniorEmployees = employees.filter { $0.age > 40 }
-        seniorEmployees.sort { $0.name < $1.name }
-        return seniorEmployees
-    }
-    
-    var midlevelEmployees: [Employee] {
-        var midlevelEmployees = employees.filter { ($0.age <= 40) && ($0.age > 27) }
-        midlevelEmployees.sort { $0.name < $1.name }
-        return midlevelEmployees
-    }
-    
-    var juniorEmployees: [Employee] {
-        var juniorEmployees = employees.filter { $0.age <= 27 }
-        juniorEmployees.sort { $0.name < $1.name }
-        return juniorEmployees
-    }
+}
+
+// Mark: Functions
+extension AllEmployeesViewModel {
     
     func loadData() async throws {
         let employees = try await api.fetchEmployees()
@@ -51,5 +38,27 @@ import SwiftUI
         withAnimation(.smooth) {
             employees = list
         }
+    }
+}
+
+// Mark: Computed Properties
+extension AllEmployeesViewModel {
+    
+    var seniorEmployees: [Employee] {
+        var seniorEmployees = employees.filter { $0.age > 40 }
+        seniorEmployees.sort { $0.name < $1.name }
+        return seniorEmployees
+    }
+    
+    var midlevelEmployees: [Employee] {
+        var midlevelEmployees = employees.filter { ($0.age <= 40) && ($0.age > 27) }
+        midlevelEmployees.sort { $0.name < $1.name }
+        return midlevelEmployees
+    }
+    
+    var juniorEmployees: [Employee] {
+        var juniorEmployees = employees.filter { $0.age <= 27 }
+        juniorEmployees.sort { $0.name < $1.name }
+        return juniorEmployees
     }
 }

@@ -8,9 +8,9 @@
 import Foundation
 
 let api = Api.shared
-final class Api  {
+final class Api: AbstractApi  {
     
-    fileprivate static let shared: Api = Api()
+    fileprivate static let shared: AbstractApi = Api()
     
     private init() { }
 }

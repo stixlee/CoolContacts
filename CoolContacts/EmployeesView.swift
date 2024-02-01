@@ -17,10 +17,14 @@ struct EmployeesView: View {
                 Section(header: Text("Senior Employees")) {
                     ForEach(viewModel.seniorEmployees, id: \.id) { employee in
                         NavigationLink() {
-                            Text(employee.name)
-                                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                            EmployeeDetailsView(
+                                viewModel: EmployeeViewModel(employee: employee)
+                            )
+                            .frame(maxWidth: .infinity, maxHeight: .infinity)
                         } label: {
-                            EmployeeCell(viewModel: employee)
+                            EmployeeCell(
+                                viewModel: EmployeeViewModel(employee: employee)
+                            )
                         }
                     }
                     .cornerRadius(15)
@@ -28,20 +32,26 @@ struct EmployeesView: View {
                 Section(header: Text("Mid-Level Employees")) {
                     ForEach(viewModel.midlevelEmployees, id: \.id) { employee in
                         NavigationLink() {
-                            Text(employee.name)
-                                .frame(maxWidth: .infinity, maxHeight: .infinity)
-                        } label: {
-                            EmployeeCell(viewModel: employee)
-                        }
+                            EmployeeDetailsView(
+                                viewModel: EmployeeViewModel(employee: employee)
+                            )
+                       } label: {
+                           EmployeeCell(
+                               viewModel: EmployeeViewModel(employee: employee)
+                           )
+                       }
                     }
                 }
                 Section(header: Text("Junior Employees")) {
                     ForEach(viewModel.juniorEmployees, id: \.id) { employee in
                         NavigationLink() {
-                            Text(employee.name)
-                                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                            EmployeeDetailsView(
+                                viewModel: EmployeeViewModel(employee: employee)
+                            )
                         } label: {
-                            EmployeeCell(viewModel: employee)
+                            EmployeeCell(
+                                viewModel: EmployeeViewModel(employee: employee)
+                            )
                         }
                     }
                 }

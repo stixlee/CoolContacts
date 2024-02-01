@@ -9,11 +9,11 @@ import SwiftUI
 
 struct EmployeeCell: View {
     
-    @ObservedObject var viewModel: Employee
+    @ObservedObject var viewModel: EmployeeViewModel
     
     var body: some View {
         Label {
-            Text(viewModel.name)
+            Text(viewModel.employee.name)
         } icon: {
             Image(systemName: "person.fill")
                 .foregroundColor(.orange)
@@ -24,11 +24,11 @@ struct EmployeeCell: View {
     }
 }
 
-#Preview {
-    EmployeeCell(viewModel: Employee(id: 1,
-                                name: "Stix Lee",
-                                salary: 150000,
-                                age: 62,
-                                image: "")
-    )
-}
+//#Preview {
+//    EmployeeCell(viewModel: Employee(id: 1,
+//                                name: "Stix Lee",
+//                                salary: 150000,
+//                                age: 62,
+//                                image: "")
+//    )
+//}

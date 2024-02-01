@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		9080701D2B6B55F600240858 /* AddEmployeeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9080701C2B6B55F600240858 /* AddEmployeeView.swift */; };
+		9080701F2B6B5B6200240858 /* EmployeeDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9080701E2B6B5B6200240858 /* EmployeeDetailsView.swift */; };
+		908070212B6B5D3F00240858 /* ApiFetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908070202B6B5D3F00240858 /* ApiFetching.swift */; };
+		908070232B6B5DB300240858 /* ApiCreating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908070222B6B5DB300240858 /* ApiCreating.swift */; };
+		908070252B6B5DE100240858 /* ApiUpdating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908070242B6B5DE100240858 /* ApiUpdating.swift */; };
+		908070272B6B5DF500240858 /* ApiDeleting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908070262B6B5DF500240858 /* ApiDeleting.swift */; };
+		9080702A2B6B5ED800240858 /* AbstractApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908070292B6B5ED800240858 /* AbstractApi.swift */; };
+		9080702C2B6B608200240858 /* EmployeeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9080702B2B6B608200240858 /* EmployeeViewModel.swift */; };
 		90F5264E2B6AFFC000A27C7E /* CoolContactsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F5264D2B6AFFC000A27C7E /* CoolContactsApp.swift */; };
 		90F526522B6AFFC300A27C7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90F526512B6AFFC300A27C7E /* Assets.xcassets */; };
 		90F526552B6AFFC300A27C7E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90F526542B6AFFC300A27C7E /* Preview Assets.xcassets */; };
@@ -47,6 +54,13 @@
 
 /* Begin PBXFileReference section */
 		9080701C2B6B55F600240858 /* AddEmployeeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmployeeView.swift; sourceTree = "<group>"; };
+		9080701E2B6B5B6200240858 /* EmployeeDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDetailsView.swift; sourceTree = "<group>"; };
+		908070202B6B5D3F00240858 /* ApiFetching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiFetching.swift; sourceTree = "<group>"; };
+		908070222B6B5DB300240858 /* ApiCreating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCreating.swift; sourceTree = "<group>"; };
+		908070242B6B5DE100240858 /* ApiUpdating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiUpdating.swift; sourceTree = "<group>"; };
+		908070262B6B5DF500240858 /* ApiDeleting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiDeleting.swift; sourceTree = "<group>"; };
+		908070292B6B5ED800240858 /* AbstractApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractApi.swift; sourceTree = "<group>"; };
+		9080702B2B6B608200240858 /* EmployeeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeViewModel.swift; sourceTree = "<group>"; };
 		90F5264A2B6AFFC000A27C7E /* CoolContacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoolContacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90F5264D2B6AFFC000A27C7E /* CoolContactsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoolContactsApp.swift; sourceTree = "<group>"; };
 		90F526512B6AFFC300A27C7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -99,8 +113,21 @@
 			isa = PBXGroup;
 			children = (
 				9080701C2B6B55F600240858 /* AddEmployeeView.swift */,
+				9080701E2B6B5B6200240858 /* EmployeeDetailsView.swift */,
 			);
 			name = Employee;
+			sourceTree = "<group>";
+		};
+		908070282B6B5E3900240858 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				908070262B6B5DF500240858 /* ApiDeleting.swift */,
+				908070202B6B5D3F00240858 /* ApiFetching.swift */,
+				908070222B6B5DB300240858 /* ApiCreating.swift */,
+				908070242B6B5DE100240858 /* ApiUpdating.swift */,
+				908070292B6B5ED800240858 /* AbstractApi.swift */,
+			);
+			name = Protocols;
 			sourceTree = "<group>";
 		};
 		90F526412B6AFFC000A27C7E = {
@@ -194,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				90F526962B6B23B800A27C7E /* AllEmployeesViewModel.swift */,
+				9080702B2B6B608200240858 /* EmployeeViewModel.swift */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -201,6 +229,7 @@
 		90F5267B2B6B00C100A27C7E /* Api */ = {
 			isa = PBXGroup;
 			children = (
+				908070282B6B5E3900240858 /* Protocols */,
 				90F5267C2B6B00E600A27C7E /* Api.swift */,
 				90F526812B6B028A00A27C7E /* Api+Employees+Fetch.swift */,
 				90F526832B6B02CE00A27C7E /* Api+Employees+Create.swift */,
@@ -367,6 +396,7 @@
 			files = (
 				9080701D2B6B55F600240858 /* AddEmployeeView.swift in Sources */,
 				90F5268E2B6B065200A27C7E /* EmployeesResponseDAO.swift in Sources */,
+				9080701F2B6B5B6200240858 /* EmployeeDetailsView.swift in Sources */,
 				90F526822B6B028A00A27C7E /* Api+Employees+Fetch.swift in Sources */,
 				90F526912B6B076700A27C7E /* NetworkingError.swift in Sources */,
 				90F526952B6B237800A27C7E /* EmployeesView.swift in Sources */,
@@ -374,10 +404,16 @@
 				90F526862B6B02FD00A27C7E /* Api+Employees+Update.swift in Sources */,
 				90F526992B6B37CD00A27C7E /* EmployeeCell.swift in Sources */,
 				90F5268C2B6B048B00A27C7E /* EmployeeDAO.swift in Sources */,
+				908070252B6B5DE100240858 /* ApiUpdating.swift in Sources */,
+				908070232B6B5DB300240858 /* ApiCreating.swift in Sources */,
 				90F5267D2B6B00E600A27C7E /* Api.swift in Sources */,
 				90F526842B6B02CE00A27C7E /* Api+Employees+Create.swift in Sources */,
+				908070272B6B5DF500240858 /* ApiDeleting.swift in Sources */,
 				90F5264E2B6AFFC000A27C7E /* CoolContactsApp.swift in Sources */,
+				9080702C2B6B608200240858 /* EmployeeViewModel.swift in Sources */,
 				90F526932B6B18F100A27C7E /* EmployeeResponseDAO.swift in Sources */,
+				908070212B6B5D3F00240858 /* ApiFetching.swift in Sources */,
+				9080702A2B6B5ED800240858 /* AbstractApi.swift in Sources */,
 				90F526972B6B23B800A27C7E /* AllEmployeesViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
