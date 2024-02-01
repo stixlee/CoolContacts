@@ -17,9 +17,6 @@ extension Api {
             throw NetworkingError.invalidUrl
         }
         
-        guard let  url = URL(string: baseUrlString) else {
-            throw NetworkingError.invalidUrl
-        }
         let request = URLRequest(url: url)
 
         let (data, response) = try await URLSession.shared.data(for: request)
