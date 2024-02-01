@@ -12,10 +12,31 @@ struct EmployeeDetailsView: View {
     @ObservedObject var viewModel: EmployeeViewModel
     
     var body: some View {
-        Text("Employee Details for \(viewModel.employee.name)")
+        
+        ScrollView {
+            VStack(alignment: .leading, spacing: 0) {
+                IdentityView(viewModel: viewModel)
+                DetailsView(viewModel: viewModel)
+                    .padding(.top, 24)
+                Spacer()
+            }
+            
+        }
+        .ignoresSafeArea()
+
+        
+        //Bottom Details
+        
     }
 }
 
-//#Preview {
-//    EmployeeDetailsView()
-//}
+#Preview {
+    EmployeeDetailsView(viewModel: EmployeeViewModel(
+        employee: Employee(id: 2,
+                           name: "Stix Lee",
+                           salary: 150000,
+                           age: 62,
+                           image: "")
+        )
+    )
+}

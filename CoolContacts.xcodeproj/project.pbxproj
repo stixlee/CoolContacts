@@ -15,6 +15,12 @@
 		908070272B6B5DF500240858 /* ApiDeleting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908070262B6B5DF500240858 /* ApiDeleting.swift */; };
 		9080702A2B6B5ED800240858 /* AbstractApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908070292B6B5ED800240858 /* AbstractApi.swift */; };
 		9080702C2B6B608200240858 /* EmployeeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9080702B2B6B608200240858 /* EmployeeViewModel.swift */; };
+		9080702E2B6BEAD500240858 /* IdentityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9080702D2B6BEAD500240858 /* IdentityView.swift */; };
+		908070312B6BEDA400240858 /* UIScreen+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908070302B6BEDA400240858 /* UIScreen+Extensions.swift */; };
+		908070352B6BF9CD00240858 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908070342B6BF9CD00240858 /* DetailsView.swift */; };
+		908070392B6C002A00240858 /* NameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908070382B6C002A00240858 /* NameCell.swift */; };
+		9080703B2B6C01C400240858 /* AgeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9080703A2B6C01C400240858 /* AgeCell.swift */; };
+		9080703D2B6C046900240858 /* SalaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9080703C2B6C046900240858 /* SalaryCell.swift */; };
 		90F5264E2B6AFFC000A27C7E /* CoolContactsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F5264D2B6AFFC000A27C7E /* CoolContactsApp.swift */; };
 		90F526522B6AFFC300A27C7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90F526512B6AFFC300A27C7E /* Assets.xcassets */; };
 		90F526552B6AFFC300A27C7E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90F526542B6AFFC300A27C7E /* Preview Assets.xcassets */; };
@@ -61,6 +67,12 @@
 		908070262B6B5DF500240858 /* ApiDeleting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiDeleting.swift; sourceTree = "<group>"; };
 		908070292B6B5ED800240858 /* AbstractApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractApi.swift; sourceTree = "<group>"; };
 		9080702B2B6B608200240858 /* EmployeeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeViewModel.swift; sourceTree = "<group>"; };
+		9080702D2B6BEAD500240858 /* IdentityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentityView.swift; sourceTree = "<group>"; };
+		908070302B6BEDA400240858 /* UIScreen+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+Extensions.swift"; sourceTree = "<group>"; };
+		908070342B6BF9CD00240858 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		908070382B6C002A00240858 /* NameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameCell.swift; sourceTree = "<group>"; };
+		9080703A2B6C01C400240858 /* AgeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeCell.swift; sourceTree = "<group>"; };
+		9080703C2B6C046900240858 /* SalaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalaryCell.swift; sourceTree = "<group>"; };
 		90F5264A2B6AFFC000A27C7E /* CoolContacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoolContacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90F5264D2B6AFFC000A27C7E /* CoolContactsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoolContactsApp.swift; sourceTree = "<group>"; };
 		90F526512B6AFFC300A27C7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -112,8 +124,8 @@
 		9080701B2B6B55A600240858 /* Employee */ = {
 			isa = PBXGroup;
 			children = (
+				9080703E2B6C05CF00240858 /* Details */,
 				9080701C2B6B55F600240858 /* AddEmployeeView.swift */,
-				9080701E2B6B5B6200240858 /* EmployeeDetailsView.swift */,
 			);
 			name = Employee;
 			sourceTree = "<group>";
@@ -128,6 +140,27 @@
 				908070292B6B5ED800240858 /* AbstractApi.swift */,
 			);
 			name = Protocols;
+			sourceTree = "<group>";
+		};
+		9080702F2B6BED8700240858 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				908070302B6BEDA400240858 /* UIScreen+Extensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		9080703E2B6C05CF00240858 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				9080701E2B6B5B6200240858 /* EmployeeDetailsView.swift */,
+				9080702D2B6BEAD500240858 /* IdentityView.swift */,
+				908070342B6BF9CD00240858 /* DetailsView.swift */,
+				908070382B6C002A00240858 /* NameCell.swift */,
+				9080703A2B6C01C400240858 /* AgeCell.swift */,
+				9080703C2B6C046900240858 /* SalaryCell.swift */,
+			);
+			name = Details;
 			sourceTree = "<group>";
 		};
 		90F526412B6AFFC000A27C7E = {
@@ -153,6 +186,7 @@
 		90F5264C2B6AFFC000A27C7E /* CoolContacts */ = {
 			isa = PBXGroup;
 			children = (
+				9080702F2B6BED8700240858 /* Extensions */,
 				90F5268F2B6B075100A27C7E /* Shared */,
 				90F5268A2B6B046100A27C7E /* DAOs */,
 				90F526872B6B031400A27C7E /* Models */,
@@ -396,7 +430,10 @@
 			files = (
 				9080701D2B6B55F600240858 /* AddEmployeeView.swift in Sources */,
 				90F5268E2B6B065200A27C7E /* EmployeesResponseDAO.swift in Sources */,
+				908070352B6BF9CD00240858 /* DetailsView.swift in Sources */,
+				9080703D2B6C046900240858 /* SalaryCell.swift in Sources */,
 				9080701F2B6B5B6200240858 /* EmployeeDetailsView.swift in Sources */,
+				908070392B6C002A00240858 /* NameCell.swift in Sources */,
 				90F526822B6B028A00A27C7E /* Api+Employees+Fetch.swift in Sources */,
 				90F526912B6B076700A27C7E /* NetworkingError.swift in Sources */,
 				90F526952B6B237800A27C7E /* EmployeesView.swift in Sources */,
@@ -409,10 +446,13 @@
 				90F5267D2B6B00E600A27C7E /* Api.swift in Sources */,
 				90F526842B6B02CE00A27C7E /* Api+Employees+Create.swift in Sources */,
 				908070272B6B5DF500240858 /* ApiDeleting.swift in Sources */,
+				9080703B2B6C01C400240858 /* AgeCell.swift in Sources */,
 				90F5264E2B6AFFC000A27C7E /* CoolContactsApp.swift in Sources */,
 				9080702C2B6B608200240858 /* EmployeeViewModel.swift in Sources */,
 				90F526932B6B18F100A27C7E /* EmployeeResponseDAO.swift in Sources */,
+				9080702E2B6BEAD500240858 /* IdentityView.swift in Sources */,
 				908070212B6B5D3F00240858 /* ApiFetching.swift in Sources */,
+				908070312B6BEDA400240858 /* UIScreen+Extensions.swift in Sources */,
 				9080702A2B6B5ED800240858 /* AbstractApi.swift in Sources */,
 				90F526972B6B23B800A27C7E /* AllEmployeesViewModel.swift in Sources */,
 			);
