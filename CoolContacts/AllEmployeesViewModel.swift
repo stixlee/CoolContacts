@@ -10,6 +10,8 @@ import SwiftUI
 @Observable final class AllEmployeesViewModel: ObservableObject {
     
     var employees: [Employee] = []
+    var showError: Bool = false
+    var presentAddEmployee: Bool = false
     
     var seniorEmployees: [Employee] {
         var seniorEmployees = employees.filter { $0.age > 40 }
@@ -32,6 +34,11 @@ import SwiftUI
     func loadData() async throws {
         let employees = try await api.fetchEmployees()
         await update(with: employees)
+    }
+    
+    func addEmployee() {
+        print("DEBUG: Adding Employee")
+        presentAddEmployee.toggle()
     }
 
     @MainActor

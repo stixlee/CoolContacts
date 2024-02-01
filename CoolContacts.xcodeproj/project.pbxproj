@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9080701D2B6B55F600240858 /* AddEmployeeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9080701C2B6B55F600240858 /* AddEmployeeView.swift */; };
 		90F5264E2B6AFFC000A27C7E /* CoolContactsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F5264D2B6AFFC000A27C7E /* CoolContactsApp.swift */; };
 		90F526522B6AFFC300A27C7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90F526512B6AFFC300A27C7E /* Assets.xcassets */; };
 		90F526552B6AFFC300A27C7E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90F526542B6AFFC300A27C7E /* Preview Assets.xcassets */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9080701C2B6B55F600240858 /* AddEmployeeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmployeeView.swift; sourceTree = "<group>"; };
 		90F5264A2B6AFFC000A27C7E /* CoolContacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoolContacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90F5264D2B6AFFC000A27C7E /* CoolContactsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoolContactsApp.swift; sourceTree = "<group>"; };
 		90F526512B6AFFC300A27C7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -93,6 +95,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9080701B2B6B55A600240858 /* Employee */ = {
+			isa = PBXGroup;
+			children = (
+				9080701C2B6B55F600240858 /* AddEmployeeView.swift */,
+			);
+			name = Employee;
+			sourceTree = "<group>";
+		};
 		90F526412B6AFFC000A27C7E = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +175,7 @@
 		90F526782B6B006300A27C7E /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				9080701B2B6B55A600240858 /* Employee */,
 				90F526792B6B009200A27C7E /* All Contacts */,
 			);
 			name = Features;
@@ -354,6 +365,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9080701D2B6B55F600240858 /* AddEmployeeView.swift in Sources */,
 				90F5268E2B6B065200A27C7E /* EmployeesResponseDAO.swift in Sources */,
 				90F526822B6B028A00A27C7E /* Api+Employees+Fetch.swift in Sources */,
 				90F526912B6B076700A27C7E /* NetworkingError.swift in Sources */,

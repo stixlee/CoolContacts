@@ -23,6 +23,7 @@ struct EmployeesView: View {
                             EmployeeCell(viewModel: employee)
                         }
                     }
+                    .cornerRadius(15)
                 }
                 Section(header: Text("Mid-Level Employees")) {
                     ForEach(viewModel.midlevelEmployees, id: \.id) { employee in
@@ -47,14 +48,34 @@ struct EmployeesView: View {
 
 
             }
+            .padding([.leading, .trailing], 18)
+            .scrollIndicators(.hidden)
             .listStyle(.grouped)
+            .alert(isPresented: $viewModel.showError) {
+                Alert(title: Text("Could Not Load Employees"), message: Text("Too Many Requests"), dismissButton: .default(Text("Got it!")))
+            }
+            .sheet(isPresented: $viewModel.presentAddEmployee) {
+                AddEmployeeView(viewModel: viewModel)
+            }
             .navigationTitle("Employees")
+            .toolbar {
+                ToolbarItemGroup(placement: .navigationBarTrailing) {
+                    Button {
+                        viewModel.addEmployee()
+                    } label: {
+                        Image(systemName: "plus")
+                            .font(.headline)
+                            .foregroundStyle(Color.primaryForeground)
+                    }
+                }
+            }
+
         }
         .refreshable() {
             do {
                try await viewModel.loadData()
             } catch {
-                print("ERROR")
+                viewModel.showError.toggle()
             }
 
         }
@@ -62,7 +83,7 @@ struct EmployeesView: View {
             do {
                try await viewModel.loadData()
             } catch {
-                print("ERROR")
+                viewModel.showError.toggle()
             }
         }
     }
