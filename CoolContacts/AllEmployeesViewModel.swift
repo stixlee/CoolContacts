@@ -13,6 +13,9 @@ import SwiftUI
     var employees: [Employee] = []
     var showError: Bool = false
     var presentAddEmployee: Bool = false
+    var isLoaded = false
+    
+    private var lastId: Int = 100
 }
 
 // Mark: Functions
@@ -23,9 +26,15 @@ extension AllEmployeesViewModel {
         await update(with: employees)
     }
     
-    func addEmployee() {
+    func openAddEmployee() {
         print("DEBUG: Adding Employee")
         presentAddEmployee.toggle()
+    }
+    
+    func addEmployee(employee: Employee) {
+        withAnimation(.smooth) {
+            employees.append(employee)
+        }
     }
 
     @MainActor
@@ -60,6 +69,11 @@ extension AllEmployeesViewModel {
         var juniorEmployees = employees.filter { $0.age <= 27 }
         juniorEmployees.sort { $0.name < $1.name }
         return juniorEmployees
+    }
+    
+    var nextId: Int {
+        lastId += 1
+        return lastId
     }
     
 }

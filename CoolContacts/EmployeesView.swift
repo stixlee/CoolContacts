@@ -64,13 +64,13 @@ struct EmployeesView: View {
                 Alert(title: Text("Could Not Load Employees"), message: Text("Too Many Requests"), dismissButton: .default(Text("Got it!")))
             }
             .sheet(isPresented: $viewModel.presentAddEmployee) {
-                AddEmployeeView(viewModel: viewModel)
+                AddEmployeeView(viewModel: viewModel, isPresented: $viewModel.presentAddEmployee)
             }
             .navigationTitle("Employees")
             .toolbar {
                 ToolbarItemGroup(placement: .navigationBarTrailing) {
                     Button {
-                        viewModel.addEmployee()
+                        viewModel.openAddEmployee()
                     } label: {
                         Image(systemName: "plus")
                             .font(.headline)
@@ -89,6 +89,8 @@ struct EmployeesView: View {
 
         }
         .task {
+            if viewModel.isLoaded { return }
+            viewModel.isLoaded = true
             do {
                try await viewModel.loadData()
             } catch {

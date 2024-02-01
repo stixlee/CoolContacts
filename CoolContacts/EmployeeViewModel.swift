@@ -11,7 +11,7 @@ import SwiftUI
 @Observable final class EmployeeViewModel: ObservableObject {
     
     var employee: Employee
-    
+        
     init(employee: Employee) {
         self.employee = employee
     }

@@ -21,6 +21,7 @@
 		908070392B6C002A00240858 /* NameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908070382B6C002A00240858 /* NameCell.swift */; };
 		9080703B2B6C01C400240858 /* AgeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9080703A2B6C01C400240858 /* AgeCell.swift */; };
 		9080703D2B6C046900240858 /* SalaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9080703C2B6C046900240858 /* SalaryCell.swift */; };
+		908070412B6C131F00240858 /* InputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908070402B6C131F00240858 /* InputField.swift */; };
 		90F5264E2B6AFFC000A27C7E /* CoolContactsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F5264D2B6AFFC000A27C7E /* CoolContactsApp.swift */; };
 		90F526522B6AFFC300A27C7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90F526512B6AFFC300A27C7E /* Assets.xcassets */; };
 		90F526552B6AFFC300A27C7E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90F526542B6AFFC300A27C7E /* Preview Assets.xcassets */; };
@@ -73,6 +74,7 @@
 		908070382B6C002A00240858 /* NameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameCell.swift; sourceTree = "<group>"; };
 		9080703A2B6C01C400240858 /* AgeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeCell.swift; sourceTree = "<group>"; };
 		9080703C2B6C046900240858 /* SalaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalaryCell.swift; sourceTree = "<group>"; };
+		908070402B6C131F00240858 /* InputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputField.swift; sourceTree = "<group>"; };
 		90F5264A2B6AFFC000A27C7E /* CoolContacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoolContacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90F5264D2B6AFFC000A27C7E /* CoolContactsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoolContactsApp.swift; sourceTree = "<group>"; };
 		90F526512B6AFFC300A27C7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -124,8 +126,8 @@
 		9080701B2B6B55A600240858 /* Employee */ = {
 			isa = PBXGroup;
 			children = (
+				9080703F2B6C12E400240858 /* AddEmployee */,
 				9080703E2B6C05CF00240858 /* Details */,
-				9080701C2B6B55F600240858 /* AddEmployeeView.swift */,
 			);
 			name = Employee;
 			sourceTree = "<group>";
@@ -161,6 +163,15 @@
 				9080703C2B6C046900240858 /* SalaryCell.swift */,
 			);
 			name = Details;
+			sourceTree = "<group>";
+		};
+		9080703F2B6C12E400240858 /* AddEmployee */ = {
+			isa = PBXGroup;
+			children = (
+				908070402B6C131F00240858 /* InputField.swift */,
+				9080701C2B6B55F600240858 /* AddEmployeeView.swift */,
+			);
+			name = AddEmployee;
 			sourceTree = "<group>";
 		};
 		90F526412B6AFFC000A27C7E = {
@@ -431,6 +442,7 @@
 				9080701D2B6B55F600240858 /* AddEmployeeView.swift in Sources */,
 				90F5268E2B6B065200A27C7E /* EmployeesResponseDAO.swift in Sources */,
 				908070352B6BF9CD00240858 /* DetailsView.swift in Sources */,
+				908070412B6C131F00240858 /* InputField.swift in Sources */,
 				9080703D2B6C046900240858 /* SalaryCell.swift in Sources */,
 				9080701F2B6B5B6200240858 /* EmployeeDetailsView.swift in Sources */,
 				908070392B6C002A00240858 /* NameCell.swift in Sources */,
