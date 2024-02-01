@@ -22,6 +22,7 @@ struct AgeCell: View {
                 .background(.clear)
             Text("\(age)")
                 .font(.subheadline)
+                .fontWeight(.semibold)
                 .foregroundStyle(.primaryForeground)
                 .padding([.top, .bottom], 14)
                 .background(.clear)

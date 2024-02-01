@@ -23,6 +23,7 @@ struct SalaryCell: View {
             Text(salary,
                  format: .currency(code: "USD").precision(.fractionLength(0)))
                 .font(.subheadline)
+                .fontWeight(.semibold)
                 .foregroundStyle(.primaryForeground)
                 .padding([.top, .bottom], 14)
                 .background(.clear)

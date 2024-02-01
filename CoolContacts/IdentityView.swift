@@ -13,25 +13,41 @@ struct IdentityView: View {
     
     var body: some View {
         VStack(alignment: .center, spacing: 12) {
-            Image(systemName: "person.circle.fill")
-                .resizable()
+            
+            if let path = viewModel.injectedImagePath {
+                AsyncImage(url: URL(string: path)) { image in
+                    image
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                } placeholder: {
+                    ProgressView()
+                }
                 .frame(width: 250, height: 250)
-                .background(.clear)
-                .foregroundStyle(Color.primaryForeground)
-                .padding(.top, 96)
+                .cornerRadius(150)
+                .padding(.top, 128)
+            } else {
+                Image(systemName: "person.circle.fill")
+                    .resizable()
+                    .frame(width: 250, height: 250)
+                    .background(.clear)
+                    .foregroundStyle(.black)
+                    .padding(.top, 128)
+            }
+            
             HStack(alignment: .center, spacing: 0) {
                 Spacer()
                 Text(viewModel.employee.name)
                     .font(.largeTitle)
                     .fontWeight(.semibold)
+                    .foregroundStyle(.black)
                 Spacer()
             }
-            .padding(.top, 12)
+            .padding(.top, 24)
             Spacer()
         }
         .edgesIgnoringSafeArea(.top)
-        .frame(height: UIScreen.screenHeight * 0.5)
-        .background(Color.gray)
+        .frame(height: UIScreen.screenHeight * 0.6)
+        .background(Color.detailsBackground)
         
     }
 }

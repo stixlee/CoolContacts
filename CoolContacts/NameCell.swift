@@ -22,6 +22,7 @@ struct NameCell: View {
                 .background(.clear)
             Text(name)
                 .font(.subheadline)
+                .fontWeight(.semibold)
                 .foregroundStyle(.primaryForeground)
                 .padding([.top, .bottom], 14)
                 .background(.clear)

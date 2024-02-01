@@ -58,7 +58,6 @@ struct EmployeesView: View {
 
 
             }
-            .padding([.leading, .trailing], 18)
             .scrollIndicators(.hidden)
             .listStyle(.grouped)
             .alert(isPresented: $viewModel.showError) {
