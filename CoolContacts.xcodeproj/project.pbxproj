@@ -27,7 +27,7 @@
 		90F5264E2B6AFFC000A27C7E /* CoolContactsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F5264D2B6AFFC000A27C7E /* CoolContactsApp.swift */; };
 		90F526522B6AFFC300A27C7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90F526512B6AFFC300A27C7E /* Assets.xcassets */; };
 		90F526552B6AFFC300A27C7E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90F526542B6AFFC300A27C7E /* Preview Assets.xcassets */; };
-		90F5265F2B6AFFC300A27C7E /* CoolContactsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F5265E2B6AFFC300A27C7E /* CoolContactsTests.swift */; };
+		90F5265F2B6AFFC300A27C7E /* CoolContactsApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F5265E2B6AFFC300A27C7E /* CoolContactsApiTests.swift */; };
 		90F526692B6AFFC300A27C7E /* CoolContactsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F526682B6AFFC300A27C7E /* CoolContactsUITests.swift */; };
 		90F5266B2B6AFFC300A27C7E /* CoolContactsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F5266A2B6AFFC300A27C7E /* CoolContactsUITestsLaunchTests.swift */; };
 		90F5267D2B6B00E600A27C7E /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F5267C2B6B00E600A27C7E /* Api.swift */; };
@@ -84,7 +84,7 @@
 		90F526512B6AFFC300A27C7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90F526542B6AFFC300A27C7E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		90F5265A2B6AFFC300A27C7E /* CoolContactsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoolContactsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		90F5265E2B6AFFC300A27C7E /* CoolContactsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoolContactsTests.swift; sourceTree = "<group>"; };
+		90F5265E2B6AFFC300A27C7E /* CoolContactsApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoolContactsApiTests.swift; sourceTree = "<group>"; };
 		90F526642B6AFFC300A27C7E /* CoolContactsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoolContactsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		90F526682B6AFFC300A27C7E /* CoolContactsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoolContactsUITests.swift; sourceTree = "<group>"; };
 		90F5266A2B6AFFC300A27C7E /* CoolContactsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoolContactsUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -225,7 +225,7 @@
 		90F5265D2B6AFFC300A27C7E /* CoolContactsTests */ = {
 			isa = PBXGroup;
 			children = (
-				90F5265E2B6AFFC300A27C7E /* CoolContactsTests.swift */,
+				90F5265E2B6AFFC300A27C7E /* CoolContactsApiTests.swift */,
 			);
 			path = CoolContactsTests;
 			sourceTree = "<group>";
@@ -482,7 +482,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90F5265F2B6AFFC300A27C7E /* CoolContactsTests.swift in Sources */,
+				90F5265F2B6AFFC300A27C7E /* CoolContactsApiTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
