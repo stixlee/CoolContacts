@@ -7,6 +7,11 @@
 
 import Foundation
 
+// MARK: Info
+
+/*
+ Conform to ApiCreating protocol
+ */
 extension Api: ApiCreating {
     
     func addEmployee(employee: Employee) async throws -> Bool {

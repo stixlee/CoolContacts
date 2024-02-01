@@ -7,7 +7,9 @@
 
 import Foundation
 
+// MARK: Singleton Api Service
 let api = Api.shared
+
 final class Api: AbstractApi  {
     
     fileprivate static let shared: AbstractApi = Api()

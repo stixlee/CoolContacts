@@ -7,6 +7,12 @@
 
 import Foundation
 
+
+// MARK: Info
+
+/*
+ Data Access Object for Employee type
+ */
 struct EmployeeDAO: Codable {
     let id: Int
     var name: String

@@ -7,6 +7,11 @@
 
 import SwiftUI
 
+// MARK: Info
+
+/*
+ Primary View of the app
+*/
 struct EmployeesView: View {
     
     @StateObject var viewModel: AllEmployeesViewModel = AllEmployeesViewModel()

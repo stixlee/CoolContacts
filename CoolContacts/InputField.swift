@@ -7,6 +7,11 @@
 
 import SwiftUI
 
+// MARK: Info
+
+/*
+InputField used for both secure & non-secure Text input
+ */
 struct InputField: View {
     
     @Binding var text: String

@@ -7,6 +7,11 @@
 
 import SwiftUI
 
+// MARK: Info
+
+/*
+ Individual cell for salary
+*/
 struct SalaryCell: View {
     
     let salary: Int

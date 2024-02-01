@@ -7,6 +7,13 @@
 
 import SwiftUI
 
+// MARK: Info
+
+/*
+View Model for collection of employees
+loaded from server
+ */
+
 // Mark: View State
 @Observable final class AllEmployeesViewModel: ObservableObject {
     
@@ -52,7 +59,7 @@ extension AllEmployeesViewModel {
 
     @MainActor
     func update(with dao: EmployeesResponseDAO) async {
-        let contacts = dao.data
+        let contacts = dao.employees
         var list: [Employee] = []
         for contact in  contacts {
             list.append(Employee(from: contact))

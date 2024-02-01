@@ -7,6 +7,12 @@
 
 import SwiftUI
 
+// MARK: Info
+
+/*
+View Model for collection of a single employee
+ */
+
 // Mark: View State
 @Observable final class EmployeeViewModel: ObservableObject {
     
@@ -16,6 +22,7 @@ import SwiftUI
         self.employee = employee
     }
     
+    // MARK: artificially inject remote images for targeted employees
     var injectedImagePath: String? {
         let uppercaseName = employee.name.uppercased()
         if uppercaseName.hasPrefix("ST") {

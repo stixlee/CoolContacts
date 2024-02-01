@@ -7,15 +7,20 @@
 
 import Foundation
 
+// MARK: Info
+
+/*
+ Data Access Object when fetching all employees
+ */
 struct EmployeesResponseDAO: Codable {
     let status: String
-    let data: [EmployeeDAO]
+    let employees: [EmployeeDAO]
     let message: String
     
-//    enum CodingKeys: String, CodingKey {
-//        case status = "status"
-////        case employees = "data"
-//        case message = "message"
-//    }
+    enum CodingKeys: String, CodingKey {
+        case status = "status"
+        case employees = "data"
+        case message = "message"
+    }
 
 }

@@ -7,6 +7,11 @@
 
 import SwiftUI
 
+// MARK: Info
+
+/*
+ Employee Model
+ */
 @Observable class Employee: Identifiable, ObservableObject {
     let id: Int
     var name: String

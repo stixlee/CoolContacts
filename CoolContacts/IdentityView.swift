@@ -7,6 +7,11 @@
 
 import SwiftUI
 
+// MARK: Info
+
+/*
+Top section of EmployeeDetailView
+ */
 struct IdentityView: View {
     
     @ObservedObject var viewModel: EmployeeViewModel

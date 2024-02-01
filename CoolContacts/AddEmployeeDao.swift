@@ -7,6 +7,11 @@
 
 import Foundation
 
+// MARK: Info
+
+/*
+ Data Access Object POSTed to server when adding employee
+ */
 struct AddEmployeeDao: Codable {
     let name: String
     let salary: String

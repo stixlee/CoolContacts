@@ -7,6 +7,11 @@
 
 import SwiftUI
 
+// MARK: Info
+
+/*
+Presented View for adding a new employee
+ */
 struct AddEmployeeView: View {
     
     @ObservedObject var viewModel: AllEmployeesViewModel

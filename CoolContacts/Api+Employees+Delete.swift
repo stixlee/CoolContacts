@@ -1,8 +1,8 @@
 //
-//  Api+Employees+Update.swift
+//  Api+Employees+Delete.swift
 //  CoolContacts
 //
-//  Created by Michael Lee on 1/31/24.
+//  Created by Michael Lee on 2/1/24.
 //
 
 import Foundation
@@ -12,7 +12,6 @@ import Foundation
 /*
 TBD - Not included in this release
  */
-extension Api: ApiUpdating {
+extension Api: ApiDeleting {
     
 }
-

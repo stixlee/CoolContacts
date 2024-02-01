@@ -7,6 +7,11 @@
 
 import SwiftUI
 
+// MARK: Info
+
+/*
+ Individual cell for name
+ */
 struct NameCell: View {
     
     let name: String

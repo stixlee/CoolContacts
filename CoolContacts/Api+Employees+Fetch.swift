@@ -7,6 +7,11 @@
 
 import Foundation
 
+// MARK: Info
+
+/*
+ Conform to ApiFetching protocol
+ */
 extension Api: ApiFetching {
     
     func fetchEmployees() async throws -> EmployeesResponseDAO {

@@ -7,6 +7,11 @@
 
 import SwiftUI
 
+// MARK: Info
+
+/*
+ Individual cell for age
+*/
 struct AgeCell: View {
     
     let age: Int
