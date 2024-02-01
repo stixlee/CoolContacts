@@ -14,6 +14,8 @@ import SwiftUI
     var showError: Bool = false
     var presentAddEmployee: Bool = false
     var isLoaded = false
+    var errorName = ""
+    var errorDescription = ""
     
     private var lastId: Int = 100
 }
@@ -34,6 +36,17 @@ extension AllEmployeesViewModel {
     func addEmployee(employee: Employee) {
         withAnimation(.smooth) {
             employees.append(employee)
+        }
+        Task {
+            do {
+                let _ = try await api.addEmployee(employee: employee)
+            } catch {
+                DispatchQueue.main.async {
+                    self.errorName = "Error Adding Employee"
+                    self.errorDescription = "Action Not Supported"
+                    self.showError.toggle()
+                }
+            }
         }
     }
 

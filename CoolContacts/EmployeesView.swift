@@ -61,7 +61,7 @@ struct EmployeesView: View {
             .scrollIndicators(.hidden)
             .listStyle(.grouped)
             .alert(isPresented: $viewModel.showError) {
-                Alert(title: Text("Could Not Load Employees"), message: Text("Too Many Requests"), dismissButton: .default(Text("Got it!")))
+                Alert(title: Text(viewModel.errorName), message: Text(viewModel.errorDescription), dismissButton: .default(Text("Got it!")))
             }
             .sheet(isPresented: $viewModel.presentAddEmployee) {
                 AddEmployeeView(viewModel: viewModel, isPresented: $viewModel.presentAddEmployee)
@@ -84,7 +84,11 @@ struct EmployeesView: View {
             do {
                try await viewModel.loadData()
             } catch {
-                viewModel.showError.toggle()
+                DispatchQueue.main.async {
+                    viewModel.errorName = "Error Loading Data"
+                    viewModel.errorDescription = "Too Many Requests"
+                    viewModel.showError.toggle()
+                }
             }
 
         }
@@ -94,7 +98,11 @@ struct EmployeesView: View {
             do {
                try await viewModel.loadData()
             } catch {
-                viewModel.showError.toggle()
+                DispatchQueue.main.async {
+                    viewModel.errorName = "Error Loading Data"
+                    viewModel.errorDescription = "Too Many Requests"
+                    viewModel.showError.toggle()
+                }
             }
         }
     }

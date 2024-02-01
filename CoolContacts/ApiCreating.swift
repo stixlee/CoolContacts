@@ -8,6 +8,6 @@
 import Foundation
 
 protocol ApiCreating {
-    
+    func addEmployee(employee: Employee) async throws -> Bool
 }
 
